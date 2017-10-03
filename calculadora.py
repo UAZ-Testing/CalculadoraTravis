@@ -53,4 +53,5 @@ class Calculadora:
             self.resultado = 'Datos inválidos'
 
     def validar_tipo_datos(self, num1, num2=0):
-        return isinstance(num1, (int, float)) and isinstance(num2, (int, float))
+        return isinstance(num1, (int, float)) and \
+               isinstance(num2, (int, float))
