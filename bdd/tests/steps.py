@@ -54,7 +54,3 @@ def dado_que_ingreso_el_numero_group1(step, num):
 @step(u'cuando realizo la raíz')
 def cuando_realizo_la_raiz(step):
     world.cal.raiz(int(world.num))
-
-
-
-
