@@ -3,8 +3,7 @@ before_script:
   - "autopep8 -ir *"
   - "flake8 --max-complexity=5 --exclude=*.txt,*.md *"
 install:
-  - "pip3 install -r requirements_p3.txt"
-  - "pip2 install -r requirements_p2.txt"
+  - "pip install -r requirements.txt"
 language: python
 python: 
   - "3.5"
@@ -12,3 +11,4 @@ python:
 script: 
   - "python3 calculadoratest.py"
   - "lettuce bdd/tests"
+  - "coverage run --branch calculadoratest.py"
