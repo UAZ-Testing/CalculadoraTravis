@@ -31,7 +31,7 @@ class Calculadora:
     def dividir(self, num1, num2):
         if self.validar_tipo_datos(num1, num2):
             try:
-                self.resultado = num1 / num2
+                self.resultado = num1 / float(num2)
             except ZeroDivisionError:
                 self.resultado = 'No se permiten divisiones entre 0'
         else:
