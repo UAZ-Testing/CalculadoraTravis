@@ -6,6 +6,7 @@ install: "pip install -r requirements.txt"
 language: python
 python: 
   - "3.5"
+  - "2.7"
 script: 
-  - "python calculadoratest.py"
+  - "python3 calculadoratest.py"
   - "lettuce bdd/tests"
