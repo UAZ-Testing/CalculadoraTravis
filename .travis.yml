@@ -2,7 +2,9 @@
 before_script: 
   - "autopep8 -ir *"
   - "flake8 --max-complexity=5 --exclude=*.txt,*.md *"
-install: "pip install -r requirements.txt"
+install:
+  - "pip3 install -r requirements_p3.txt"
+  - "pip2 install -r requirements_p2.txt"
 language: python
 python: 
   - "3.5"
